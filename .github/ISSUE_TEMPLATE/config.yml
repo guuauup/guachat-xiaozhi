@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Hardware documentation and warranty
+    url: https://gitee.com/guaup/guachat
+    about: Pin maps, schematics, and replacement requests for the GUACHAT 2G4 hardware

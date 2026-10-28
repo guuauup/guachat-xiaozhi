@@ -1,0 +1,15 @@
+{
+    "manufacturer": "guaup",
+    "type": "guachat",
+    "target": "esp32s3",
+    "builds": [
+        {
+            "name": "guachat",
+            "sdkconfig_append": [
+                "CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y",
+                "CONFIG_USE_ESP_WAKE_WORD=y",
+                "CONFIG_USE_WECHAT_MESSAGE_STYLE=y"
+            ]
+        }
+    ]
+}

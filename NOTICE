@@ -1,0 +1,19 @@
+GUACHAT 2G4 XiaoZhi port
+
+This repository is derived from xiaozhi-esp32:
+https://github.com/78/xiaozhi-esp32
+
+Upstream snapshot used for this port:
+- Version: 2.4.2
+- Commit: bb9122ab08c3083eeb4f67b3974b7afe771723b8
+
+The upstream project is licensed under the MIT License. The original license
+and copyright notice are preserved in LICENSE.
+
+Board-specific modifications include the guachat board identity (type
+"guachat", ESP32-S3), the ST7796 320x480 SPI panel with BGR element order,
+inverted colour and PSRAM full-frame buffers, a bare I2S audio path
+(MAX98357 amplifier and I2S microphone, no codec chip), ST7796 and FT6336U
+resets driven through a TCA9535 IO expander along with the power latch and
+the volume keys, FT6336U touch gestures, DRV2605L haptics, MAX17055 fuel
+gauge decoding, and single-board repository/CI packaging.

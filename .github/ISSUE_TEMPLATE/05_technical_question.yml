@@ -1,0 +1,42 @@
+name: Firmware development question
+description: Ask a focused technical question about this repository or supported hardware
+title: "[Question] "
+labels: ['question']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is for technical questions about this repository. See [SUPPORT.md](../SUPPORT.md) for hardware and account questions.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have searched the repository and existing issues and did not find an answer.
+          required: true
+
+  - type: input
+    id: context
+    attributes:
+      label: Relevant device, version, or code area
+      description: Enter the device/model, board target, source or firmware version, file, or subsystem that matters to the question.
+      placeholder: ex. guaup/guachat on current main, or main/audio on v2.2.6
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Goal and question
+      description: Explain what you are trying to accomplish and state the specific technical question.
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you tried?
+      description: Optionally include relevant files, commands, experiments, logs, screenshots, or a minimal example.
+    validations:
+      required: false
